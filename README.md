@@ -6,10 +6,12 @@ This is an app created using react and redux with the task given by CodeCademy f
 I used the reddit JSON API to get the data from reddit into my app
 
 Frameworks:
+-
  - React
  - Redux
  
 Languages:
+-
  - Javascript
  
 Features:
