@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+reddit_info.txt
+
+# protoype/mockup folder
+prototype/
