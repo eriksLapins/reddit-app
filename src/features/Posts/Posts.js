@@ -26,9 +26,9 @@ const Posts = () => {
     return (
             <div className="posts-container">
                 <h1 className="section-title">Posts</h1>
-                {postPreviews ? postPreviews.map((post) => (
+                {postPreviews.map((post) => (
                     <PostItem post={post} />
-                )) : <div></div>}
+                ))}
             </div>
         )
 }
