@@ -1,6 +1,6 @@
 import React from "react";
 
-function postItem({ post }) {
+export default function PostItem({ post }) {
     return (
             <div className="post-content-container">
                 <h3 className="post-title">{post.subreddit}</h3>
@@ -8,5 +8,3 @@ function postItem({ post }) {
             </div>
         );
 }
-
-export default postItem;

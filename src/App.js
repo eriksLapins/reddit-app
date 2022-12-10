@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom"
 
 
 function App() {
-  const subreddit = "/r/popular"
+  const subreddit = "/r/popular";
 
   return (
   <>
@@ -18,7 +18,6 @@ function App() {
         <Route path="/posts" element={<Posts subreddit={subreddit} />} />
         <Route path="/search" element={<Search />} />
       </Routes>
-
     </div>
   </>
   )

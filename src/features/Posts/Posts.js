@@ -7,7 +7,7 @@ import {
     isLoading
 } from './postsSlice.js';
 
-import postItem from '../../components/post/postItem';
+import PostItem from '../../components/post/postItem';
 
 
 const Posts = () => {
@@ -17,24 +17,19 @@ const Posts = () => {
 
     useEffect((subreddit) => {
         dispatch(loadPosts(subreddit));
-    }, [dispatch])
+    }, [dispatch]);
 
     if (isLoadingPreviews) {
         return <div className="loading">Loading Posts</div>
-    }
+    };
 
     return (
-        <>
-            <section className="posts-container">
-                <h2 className="section-title">Posts</h2>
-                {postPreviews.map((post) => (
-                    <div key={post.id}>
-                        <postItem post={post}/>
-                    </div>
-                ))
-                }
-            </section>
-        </>
+            <div className="posts-container">
+                <h1 className="section-title">Posts</h1>
+                {postPreviews ? postPreviews.map((post) => (
+                    <PostItem post={post} />
+                )) : <div></div>}
+            </div>
         )
 }
 
